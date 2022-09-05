@@ -5,29 +5,7 @@ services:
     build:
       context: ./php-apache
       dockerfile: Dockerfile
-    # depends_on:
-    #   - db-floorball
     volumes:
       - ../app/:/var/www/html/
     ports:
       - 8000:80
-  #   env_file: ../.env
-  # db-floorball:
-  #   container_name: db-floorball
-  #   image: mysql
-  #   restart: always
-  #   env_file: ../.env
-  #   ports:
-  #     - "9906:3306"
-  #   volumes:
-  #     - ../model/structure:/docker-entrypoint-initdb.d
-  # phpmyadmin:
-  #   container_name: phpmyadmin-floorball
-  #   image: phpmyadmin/phpmyadmin
-  #   ports:
-  #     - "8080:80"
-  #   restart: always
-  #   environment:
-  #     PMA_HOST: db-floorball
-  #   depends_on:
-  #     - db-floorball
