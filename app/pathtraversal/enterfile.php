@@ -9,7 +9,7 @@
 <body>
     <p>Enter a file wich you want to read from the file system <b>but only in the examplefiles directory</b></p>
     <br>
-    <b>not safed against directory traversal</b>
+    <b>not safed against path traversal</b>
     <form method="get" action="displayfilenotsafe.php">
         <input type="text" name="filename">
         <button type="submit">show file content</button>
@@ -18,7 +18,7 @@
     <br>
     <p>Enter a file wich you want to read from the file system <b>but only in the examplefiles directory</b></p>
     <br>
-    <b>safe against directory traversal</b>
+    <b>safe against path traversal</b>
     <form method="get" action="displayfilesafe.php">
         <input type="text" name="filename">
         <button type="submit">show file content</button>

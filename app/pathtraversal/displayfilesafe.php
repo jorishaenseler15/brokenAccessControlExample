@@ -27,7 +27,7 @@
     echo "<b>Der Inhalt vom File " . $filename . "</b>";
     echo ("<pre>$filetext</pre>");
     } else {
-        echo "<b>You are trying to do directory traversal, got you :)</b>";
+        echo "<b>You are trying to do path traversal, got you :)</b>";
     }
     ?>
     <br>

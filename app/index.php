@@ -7,6 +7,6 @@
     <title>BrokenAccessControl</title>
 </head>
 <body>
-    <p><a href="directorytraversal/enterfile.php">Directory traversal wrong</a></p>
+    <p><a href="pathtraversal/enterfile.php">Directory traversal wrong</a></p>
 </body>
 </html>
